@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MouseController;
+use App\Http\Controllers\KeyboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/mice', [MouseController::class, 'index'])->name('showMice');
+Route::get('/mice/{mouse}', [MouseController::class, 'show'])->name('showMouse');
+
+Route::get('/keyboards', [KeyboardController::class, 'index'])->name('showKeyboards');
+Route::get('/keyboards/{keyboard}', [KeyboardController::class, 'show'])->name('showKeyboard');
