@@ -17,29 +17,33 @@ class DatabaseSeeder extends Seeder
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Ultimate',
             'price' => '149',
+            'votes'=>'20',
             'image'=> 'https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UF894,1000_QL80_.jpg',
         ]);
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Ultimate Wireless',
             'price' => '199',
+            'votes'=>'100',
             'image'=> 'https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UF894,1000_QL80_.jpg',
         ]);
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Basic',
             'price' => '29',
+            'votes'=>'5',
             'image'=> 'https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UF894,1000_QL80_.jpg',
         ]);
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Basic wireless',
             'price' => '59',
+            'votes'=>'10',
             'image'=> 'https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UF894,1000_QL80_.jpg',
         ]);
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Office',
             'price' => '49',
+            'votes'=>'1',
             'image'=> 'https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UF894,1000_QL80_.jpg',
         ]);
-
         
         \App\Models\Keyboard::factory()->create([
             'name' => 'LFD Basic wireless',

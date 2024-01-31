@@ -2,38 +2,44 @@
   <x-slot name="title">Welcome page -- Site overview </x-slot>
    <x-slot name="content">
     <div class="w3-row-padding w3-center w3-margin-top">
-        <div class="w3-quarter">
-            <div class="w3-card w3-container" style="min-height:460px">
-                <h3>Mice</h3><br>
-                <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                <p>Unbreakable</p>
-                <p>Macro keys</p>
-                <p>No delay</p>
-                <p>Wired and Wireless options</p>
+        <a href="{{ route("showMice") }}">
+            <div class="w3-quarter">
+                <div class="w3-card w3-container" style="min-height:460px">
+                    <h3>Mice</h3><br>
+                    <i class="fa fa-gamepad w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                    <p>Unbreakable</p>
+                    <p>Macro keys</p>
+                    <p>No delay</p>
+                    <p>Wired and Wireless options</p>
+                </div>
             </div>
-        </div>
+        </a>
         
-        <div class="w3-quarter">
-            <div class="w3-card w3-container" style="min-height:460px">
-                <h3>Keyboards</h3><br>
-                <i class="fa fa-keyboard-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                <p>Custom switches</p>
-                <p>Macro keys</p>
-                <p>No delay</p>
-                <p>Wired and Wireless options</p>
+        <a href="{{ route("showKeyboards") }}">
+            <div class="w3-quarter">
+                <div class="w3-card w3-container" style="min-height:460px">
+                    <h3>Keyboards</h3><br>
+                    <i class="fa fa-keyboard-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                    <p>Custom switches</p>
+                    <p>Macro keys</p>
+                    <p>No delay</p>
+                    <p>Wired and Wireless options</p>
+                </div>
             </div>
-            
-        </div>
-        <div class="w3-quarter">
-            <div class="w3-card w3-container" style="min-height:460px">
-                <h3>Headsets</h3><br>
-                <i class="fa fa-headphones w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-                <p>Noise canceling</p>
-                <p>Surround Sound </p>
-                <p>Comfortable materials</p>
-                <p>Wired and Wireless options</p>
+        </a>
+
+        <a href="{{ route("showMice") }}">
+            <div class="w3-quarter">
+                <div class="w3-card w3-container" style="min-height:460px">
+                    <h3>Headsets</h3><br>
+                    <i class="fa fa-headphones w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+                    <p>Noise canceling</p>
+                    <p>Surround Sound </p>
+                    <p>Comfortable materials</p>
+                    <p>Wired and Wireless options</p>
+                </div>
             </div>
-        </div>
+        </a>
         
         <div class="w3-quarter">
             <div class="w3-card w3-container" style="min-height:460px">
@@ -46,163 +52,6 @@
             </div>
         </div>
     </div>
-    
-    <div class="w3-container">
-        <hr>
-        <div class="w3-center">
-            <h2>Color Classes</h2>
-        </div>
-        
-        <div class="w3-row">
-            <div class="w3-col w3-container m2 w3-red"><p>Red</p></div>
-            <div class="w3-col w3-container m2 w3-blue"><p>Blue</p></div>
-            <div class="w3-col w3-container m2 w3-blue-grey"><p>Blue Grey</p></div>
-            <div class="w3-col w3-container m2 w3-teal"><p>Teal</p></div>
-            <div class="w3-col w3-container m2 w3-yellow"><p>Yellow</p></div>
-            <div class="w3-col w3-container m2 w3-orange"><p>Orange</p></div>
-        </div>
-        
-        <hr>
-        <div class="w3-center">
-            <h2>Built-In Responsiveness</h2>
-            <p class="w3-large">Resize the page to see the effect!</p>
-        </div>
-        <br>
-        
-        <div class="w3-row w3-border">
-            <div class="w3-half w3-container w3-blue w3-border">
-    <h5>w3-half</h5>  
-    <p>The w3-half class uses half (50%) of the screen window.</p>
-    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-</div>
-<div class="w3-half w3-container">
-    <h5>w3-half</h5>  
-</div>
-</div>
-<br>
-
-<div class="w3-row w3-border">
-    <div class="w3-third w3-container w3-green">
-        <h5>w3-third</h5>  
-        <p>The w3-third class uses one third (33.33%) of the screen widow.</p>
-        <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-    </div>
-    <div class="w3-third w3-container">
-        <h5>w3-third</h5>  
-    </div>
-    <div class="w3-third w3-container">
-        <h5>w3-third</h5>  
-    </div>
-</div>
-<br>
-
-<div class="w3-row w3-border">
-    <div class="w3-quarter w3-container w3-red">
-        <h5>w3-quarter</h5>  
-        <p>The w3-quarter class uses one quarter (25%) of the screen window.</p>
-        <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-    </div>
-    <div class="w3-quarter w3-container">
-        <h5>w3-quarter</h5>  
-    </div>
-    <div class="w3-quarter w3-container">
-        <h5>w3-quarter</h5>  
-    </div>
-    <div class="w3-quarter w3-container">
-        <h5>w3-quarter</h5>  
-    </div>
-</div> 
-
-<div class="w3-center">
-    <h2>Containers</h2>
-    <p>Use containers to create headers, sections and footers.</p>
-</div>   
-
-<header class="w3-container w3-blue-grey">
-    <h2>Header</h2>
-</header>
-
-<div class="w3-padding w3-white w3-display-container">
-    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
-    <h2>London</h2>
-    <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-        with a metropolitan area of over 13 million inhabitants.</p>
-        <p>Standing on the River Thames, London has been a major settlement for two millennia,
-            its history going back to its founding by the Romans, who named it Londinium.</p>
-            <p>By the way, you can add a close icon to all containers if you want the ability to hide them. Look to your right!</p>
-        </div>
-        
-        <footer class="w3-container w3-blue-grey">
-            <h5>Footer</h5>
-            <p class="w3-opacity">Footer information goes here</p>
-        </footer>
-        
-        <hr>
-        <div class="w3-center">
-            <h2>Color Themes</h2>
-            <p>The color themes have been designed to work harmoniously with each other.</p>
-        </div>
-    </div>
-    
-    <div class="w3-row-padding">
-        
-        <div class="w3-half">
-            <div class="w3-card white">
-                <div class="w3-container w3-indigo">
-                    <h3>Theme Indigo</h3>
-                </div>
-                <div class="w3-container">
-                    <h3 class="w3-text-indigo">Movies 2014</h3>
-                </div>
-                <ul class="w3-ul w3-border-top">
-                    <li>
-                        <h3>Frozen</h3>
-                        <p>The response to the animations was ridiculous</p>
-                    </li>
-                    <li>
-                        <h3>The Fault in Our Stars</h3>
-                        <p>Touching, gripping and genuinely well made</p>
-                    </li>
-                    <li>
-                        <h3>The Avengers</h3>
-                        <p>A huge success for Marvel and Disney</p>
-                    </li>
-                </ul>
-                <div class="w3-container w3-indigo w3-large"><span class="w3-right">Next</span></div>
-            </div>
-        </div>
-        
-        <div class="w3-half">
-            <div class="w3-card white">
-                <div class="w3-container w3-theme">
-                    <h3>Theme</h3>
-                </div>
-                <div class="w3-container">
-                    <h3 class="w3-text-theme">Movies 2014</h3>
-                </div>
-                <ul class="w3-ul w3-border-top">
-                    <li>
-                        <h3>Frozen</h3>
-                        <p>The response to the animations was ridiculous</p>
-                    </li>
-                    <li>
-                        <h3>The Fault in Our Stars</h3>
-                        <p>Touching, gripping and genuinely well made</p>
-                    </li>
-                    <li>
-                        <h3>The Avengers</h3>
-                        <p>A huge success for Marvel and Disney</p>
-                    </li>
-                </ul>
-                <div class="w3-container w3-theme w3-large"><span class="w3-right">Next</span></div>
-            </div>
-        </div>
-</div>
-
-<div class="w3-container w3-center">
-    <hr>
-    <h3>Paper-like Cards with Shadows</h3>
-</div>
 
 <div class="w3-row-padding"> 
     
@@ -233,120 +82,7 @@
     </div>
 </div>
 </div>
-
-<div class="w3-container">
-    <hr>
-    <div class="w3-center">
-        <h2>Tables</h2>
-        <p w3-class="w3-large">Don't worry. W3.CSS takes care of your tables.</p>
-    </div>
-    <div class="w3-responsive w3-card-4">
-        <table class="w3-table w3-striped w3-bordered">
-            <thead>
-                <tr class="w3-theme">
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-                <tr class="w3-white">
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-                <tr>
-                    <td>Adam</td>
-                    <td>Johnson</td>
-                    <td>67</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     
-    <hr>
-    <h2 class="w3-center">Forms and Lists</h2>
-</div>
-
-<div class="w3-row-padding">
-    
-    <div class="w3-half">
-        <form class="w3-container w3-card-4">
-            <h2>Input Form</h2>
-            <div class="w3-section">      
-                <input class="w3-input" type="text" required>
-                <label>Name</label>
-            </div>
-            <div class="w3-section">      
-                <input class="w3-input" type="text" required>
-                <label>Email</label>
-            </div>
-            <div class="w3-section">      
-                <input class="w3-input" type="text" required>
-                <label>Subject</label>
-            </div>
-            
-            <div class="w3-row">
-                <div class="w3-half">
-                    <input id="milk" class="w3-check" type="checkbox" checked="checked">
-                    <label>Milk</label>
-                    <br>
-                    <input id="sugar" class="w3-check" type="checkbox">
-                    <label>Sugar</label>
-                    <br>
-    <input id="lemon" class="w3-check" type="checkbox" disabled>
-    <label>Lemon (Disabled)</label>
-    <br><br>
-</div>
-
-<div class="w3-half">
-    <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
-    <label>Male</label>
-    <br>
-    <input id="female" class="w3-radio" type="radio" name="gender" value="female">
-    <label>Female</label>
-    <br>
-    <input id="unknown" class="w3-radio" type="radio" name="gender" value="" disabled>
-    <label> Don't know (Disabled)</label>
-</div>
-</div>
-</form>
-</div>
-<div class="w3-half">
-    <div class="w3-card-4 w3-container">
-        <h2>Lists</h2>
-        <ul class="w3-ul w3-margin-bottom">
-            <li>Jill</li>
-            <li>Eve</li>
-            <li>Adam</li>
-        </ul>
-        <br>
-        <ul class="w3-ul w3-border w3-hoverable">
-            <li class="w3-theme">Jill</li>
-            <li>Eve</li>
-            <li>Adam</li>
-            <li>Steve</li>
-        </ul>
-        <br>
-    </div>
-</div>
-</div>
-<hr>
-
-<h2 class="w3-center">Progress Bars</h2>
-<div class="w3-container">
-    
-    <div class="w3-light-gray">
-        <div id="myBar" class="w3-center w3-padding w3-theme" style="width:5%">5%</div>
-    </div><br>
-    <button class="w3-btn w3-theme" onclick="move()">Click Me</button> 
-</div>
-<hr>
 
 <h2 class="w3-center">Slideshows</h2>
 <div class="w3-content" style="max-width:800px;position:relative">
@@ -365,7 +101,7 @@
     <h2 class="w3-center">Navigation</h2>
     
     <div class="w3-bar w3-theme">
-        <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-16">Dashboard</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 1</a>
         <div class="w3-dropdown-hover">
             <button class="w3-button w3-padding-16">

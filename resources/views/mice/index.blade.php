@@ -1,6 +1,16 @@
 <x-layout>
   <x-slot name="title">LFD Mice </x-slot>
    <x-slot name="content">
+                    <div class="w3-dropdown-hover">
+            <button class="w3-button w3-padding-16">
+                Sort by <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="{{route("showMouseSorted",['type'=>'vote'])}}" class="w3-bar-item w3-button">popular</a>
+                <a href="{{route("showMouseSorted",['type'=>'price'])}}" class="w3-bar-item w3-button">price</a>
+                <a href="{{route("showMouseSorted",['type'=>'created_at'])}}" class="w3-bar-item w3-button">newest</a>
+            </div>
+  </div>
     <div class="w3-row-padding w3-center w3-margin-top">
         @foreach($mice as $mouse)
         <div class="w3-third">
@@ -20,7 +30,6 @@
             </div>
         </a>
         </div>
-        @endforeach
-        
+        @endforeach        
   </x-slot>
 </x-layout>

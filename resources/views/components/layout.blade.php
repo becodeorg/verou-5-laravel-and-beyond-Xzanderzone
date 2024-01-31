@@ -19,7 +19,11 @@
         <a href="{{ route("showKeyboards") }}" class="w3-bar-item w3-button">Keyboards</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Headsets</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Bundles</a>
+        <a href="{{ route("register") }}" class="w3-bar-item w3-button">create Account</a>
+        <a href="{{ route("dashboard") }}" class="w3-bar-item w3-button">Log In</a>
     </nav>
+    
+            {{-- @include('layouts.navigation') --}}
     
     <!-- Header -->
     <header class="w3-container w3-theme w3-padding" id="myHeader">
@@ -66,6 +70,8 @@
         <a href="{{ route("showKeyboards") }}" class="w3-bar-item w3-button">Keyboards</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Headsets</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Bundles</a>
+        <a href="{{ route("register") }}" class="w3-bar-item w3-button">create Account</a>
+        <a href="{{ route("dashboard") }}" class="w3-bar-item w3-button">Log In</a>
     <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
         <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
