@@ -9,22 +9,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-    
     <!-- Side Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
-        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+            <h1 class="w3-xxxlarge fa fa-ambulance "> Left For Dead</h1>
+        {{-- <h1 class="w3-xxxlarge w3-text-theme">Navigation</h1> --}}
         <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
         <a href="/" class="w3-bar-item w3-button">Home Page</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Mice</a>
         <a href="{{ route("showKeyboards") }}" class="w3-bar-item w3-button">Keyboards</a>
-        <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Headsets</a>
+        <a href="{{ route("showHeadsets") }}" class="w3-bar-item w3-button">Headsets</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Bundles</a>
         <a href="{{ route("register") }}" class="w3-bar-item w3-button">create Account</a>
         <a href="{{ route("dashboard") }}" class="w3-bar-item w3-button">Log In</a>
     </nav>
-    
-            {{-- @include('layouts.navigation') --}}
-    
+    {{-- top navigation --}}
+        <div class="w3-bar w3-theme">
+        <a href="/" class="w3-bar-item w3-button">Home Page</a>
+        <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Mice</a>
+        <a href="{{ route("showKeyboards") }}" class="w3-bar-item w3-button">Keyboards</a>
+        <a href="{{ route("showHeadsets") }}" class="w3-bar-item w3-button">Headsets</a>
+        <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Bundles</a>
+        <div class="w3-dropdown-hover w3-right">
+            @auth
+            <button class="w3-button w3-padding-16">
+                👤 {{Auth::user()->name }} <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="{{route("profile.edit")}}" class="w3-bar-item w3-button">Edit profile</a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit"class="w3-bar-item w3-button">Log Out</button>
+                </form>
+                @endauth
+                @guest   
+                <button class="w3-button w3-padding-16">
+                    Account <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="{{route("dashboard")}}" class="w3-bar-item w3-button">Log In</a>
+                    <a href="{{route("register")}}" class="w3-bar-item w3-button">Create Account</a>
+                    @endguest
+                </div>
+            </div>
+        </div>
     <!-- Header -->
     <header class="w3-container w3-theme w3-padding" id="myHeader">
         <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
@@ -34,10 +61,11 @@
             <div class="w3-padding-32">
                 <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('infoModal').style.display='block'" style="font-weight:900;">WHO ARE WE</button>
             </div>
+
         </div>
     </header>
-    
-    <!-- Modal -->
+
+<!-- Modal -->
     <div id="infoModal" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-top">
             <header class="w3-container w3-theme-l1"> 
@@ -56,7 +84,8 @@
             </footer>
         </div>
     </div>
-    
+
+    {{-- main content --}}
   <main>
   <h1 class="w3-container w3-center">{{$title}}</h1>
     <p>{{$content}}</p>
@@ -68,10 +97,8 @@
      <a href="/" class="w3-bar-item w3-button">Home Page</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Mice</a>
         <a href="{{ route("showKeyboards") }}" class="w3-bar-item w3-button">Keyboards</a>
-        <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Headsets</a>
+        <a href="{{ route("showHeadsets") }}" class="w3-bar-item w3-button">Headsets</a>
         <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Bundles</a>
-        <a href="{{ route("register") }}" class="w3-bar-item w3-button">create Account</a>
-        <a href="{{ route("dashboard") }}" class="w3-bar-item w3-button">Log In</a>
     <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
         <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
         <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">

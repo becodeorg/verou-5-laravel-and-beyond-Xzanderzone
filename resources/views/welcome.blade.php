@@ -28,7 +28,7 @@
             </div>
         </a>
 
-        <a href="{{ route("showMice") }}">
+        <a href="{{ route("showHeadsets") }}">
             <div class="w3-quarter">
                 <div class="w3-card w3-container" style="min-height:460px">
                     <h3>Headsets</h3><br>
@@ -53,37 +53,6 @@
         </div>
     </div>
 
-<div class="w3-row-padding"> 
-    
-    <div class="w3-third">
-        <div class="w3-card">
-            <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-            <div class="w3-container">
-                <p>w3-card</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="w3-third">
-        <div class="w3-card-4">
-            <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-            <div class="w3-container">
-                <p>w3-card-4</p>
-  </div>
-</div>
-</div>
-
-<div class="w3-third">
-    <div class="w3-card-4">
-        <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-        <div class="w3-container">
-            <p>w3-card-4</p>
-        </div>
-    </div>
-</div>
-</div>
-    
-
 <h2 class="w3-center">Slideshows</h2>
 <div class="w3-content" style="max-width:800px;position:relative">
     
@@ -97,38 +66,8 @@
 </div>
 
 <div class="w3-container">
-    <hr>
-    <h2 class="w3-center">Navigation</h2>
-    
-    <div class="w3-bar w3-theme">
-        <a href="#" class="w3-bar-item w3-button w3-padding-16">Dashboard</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 1</a>
-        <div class="w3-dropdown-hover">
-            <button class="w3-button w3-padding-16">
-                Dropdown <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 1</a>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 2</a>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 3</a>
-            </div>
-  </div>
-</div>
-  
-<hr>
-<h2 class="w3-center">Accordions</h2>
-<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 1</button>
-<div id="Demo1" class="w3-hide">
-    <div class="w3-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-</div>
-<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 2</button>
-<div id="Demo2" class="w3-hide">
-    <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
-    <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
-    <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
-</div>
+
+<h2 class="w3-center">bundle idea?  Accordion</h2>
 <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 3</button>
 <div id="Demo3" class="w3-hide w3-black">
     <div class="w3-container">
@@ -139,75 +78,19 @@
 </div>
 
 <hr>
-<h2 class="w3-center">Tabs</h2>
+<h2 class="w3-center">bundle idea? Tabs</h2>
 <div class="w3-border">
     <div class="w3-bar w3-theme">
         <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">London</button>
-        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Paris</button>
         <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Tokyo</button>
-    </div>
-    
+    </div>  
     <div id="London" class="w3-container city w3-animate-opacity">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-        <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <h2>bundles maybe</h2>
     </div>
-    
-    <div id="Paris" class="w3-container city w3-animate-opacity">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p> 
-        <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-    </div>
-    
     <div id="Tokyo" class="w3-container city w3-animate-opacity">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-        <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+        <h2>tab per bundle</h2>
     </div>
 </div>
-
-<hr>
-<h2 class="w3-center">Buttons</h2>
-<div class="w3-center">
-    <br>
-    <a class="w3-button w3-theme">Button</a>
-    <a class="w3-button w3-theme">Button</a>
-    <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
-    <br><br>
-    <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
-    <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
-    <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
 </div>
-<br>
-<div class="w3-center">
-    <div class="w3-dropdown-hover">
-        <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>
-    </div>
-</div>
-
-</div>
-
-<hr>
-<div class="w3-center">
-    <h2>Pagination</h2>
-    <!-- Pagination -->
-    <div class="w3-center w3-padding-32">
-        <div class="w3-bar">
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
-            <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
-        </div>
-    </div>
-</div>
-<br>
   </x-slot>
 </x-layout>

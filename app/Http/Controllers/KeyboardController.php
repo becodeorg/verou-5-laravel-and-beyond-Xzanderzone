@@ -11,6 +11,10 @@ class KeyboardController extends Controller
   {
     return view("keyboards.index",['keyboards'=>Keyboard::all ()]);
   }
+   public function showSorted($type)
+  {
+    return view("keyboards.index",['keyboards'=>Keyboard::all ()->sortByDesc($type)]);
+  }
   
   public function show(Keyboard $keyboard)
   {
