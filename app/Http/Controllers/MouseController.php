@@ -2,7 +2,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\PostController;
 use App\Models\Mouse;
+use App\Models\post;
 
 
 class MouseController extends Controller
@@ -18,6 +20,9 @@ class MouseController extends Controller
 
   public function show(Mouse $mouse)
   {
-    return view("mice.show",['mouse'=>$mouse]);
+    // return view("mice.show",['mouse'=>$mouse]);
+    // return view("mice.show",['mouse'=>$mouse,'posts'=>PostController::find($mouse->id)]);
+    $posts=post::with("mice")->where("product_type","mice")->where("product_id",$mouse->id)->get();
+    return view("mice.show",['mouse'=>$mouse,'posts'=>$posts]);
   }
 }

@@ -22,8 +22,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/mice', [MouseController::class, 'index'])->name('showMice');
-Route::get('/mice/{mouse}', [MouseController::class, 'show'])->name('showMouse');
 Route::get('/mice/sort/{type}', [MouseController::class, 'showMouseSorted'])->name('showMouseSorted');
+Route::get('/mice/{mouse}', [MouseController::class, 'show'])->name('showMouse');
 
 Route::get('/keyboards', [KeyboardController::class, 'index'])->name('showKeyboards');
 Route::get('/keyboards/sort/{type}', [KeyboardController::class, 'showSorted'])->name('showKeyboardsSorted');

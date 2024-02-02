@@ -120,24 +120,6 @@
             document.getElementById("mySidebar").style.display = "none";
         }
         
-        // Tabs
-        function openCity(evt, cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            var activebtn = document.getElementsByClassName("testbtn");
-            for (i = 0; i < x.length; i++) {
-                activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " w3-dark-grey";
-        }
-        
-        var mybtn = document.getElementsByClassName("testbtn")[0];
-        mybtn.click();
-        
         // Accordions
         function myAccFunc(id) {
             var x = document.getElementById(id);
@@ -165,24 +147,7 @@
             }
             x[slideIndex-1].style.display = "block";  
         }
-        
-        showDivs(1);
-        
-        // Progress Bars
-        function move() {
-            var elem = document.getElementById("myBar");   
-            var width = 5;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width == 100) {
-                    clearInterval(id);
-                } else {
-                    width++; 
-                    elem.style.width = width + '%'; 
-                    elem.innerHTML = width * 1  + '%';
-                }
-            }
-        }
+    
     </script>
 
 </body>

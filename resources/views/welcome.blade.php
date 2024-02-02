@@ -76,21 +76,7 @@
         <p>French Alps</p>
     </div>
 </div>
-
 <hr>
-<h2 class="w3-center">bundle idea? Tabs</h2>
-<div class="w3-border">
-    <div class="w3-bar w3-theme">
-        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">London</button>
-        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Tokyo</button>
-    </div>  
-    <div id="London" class="w3-container city w3-animate-opacity">
-        <h2>bundles maybe</h2>
-    </div>
-    <div id="Tokyo" class="w3-container city w3-animate-opacity">
-        <h2>tab per bundle</h2>
-    </div>
-</div>
 </div>
   </x-slot>
 </x-layout>
