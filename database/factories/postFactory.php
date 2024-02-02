@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,10 +19,12 @@ class postFactory extends Factory
     {
         return [
             'title' => fake()->text(15),
-            'content' => fake()->text(50),
-            'user_id' => fake()->randomNumber(2),
-            'product_id' => fake()->randomNumber(1),//change to 0-max in product list??
+            'content' => fake()->sentence(),
+            'user_id' => User::all()->random()->id,
+            'product_id' => fake()->numberBetween(1,5),//change to 0-max in product list??
             'product_type' => fake()->randomElement(['mice','keyboards','headsets','bundles']),
         ];
     }
 }
+
+

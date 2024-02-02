@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        //mice wip
         \App\Models\Mouse::factory()->create([
             'name' => 'LFD Ultimate',
             'price' => '149',
@@ -76,9 +77,7 @@ class DatabaseSeeder extends Seeder
             'price' => '29',
             'image'=> 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmC_HuWTsi1rIUjvX4n0cfnxC2Q0tdgqn5SqTlowmAzw&s',
         ]);
-    
         \App\Models\User::factory(100)->create();
-        // \App\Models\post::factory(500)->create();
-
+        \App\Models\post::factory(500)->create();
     }
 }

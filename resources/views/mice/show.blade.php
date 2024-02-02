@@ -16,19 +16,16 @@
                 <br>
                 <a href="{{ route("showMice") }}" class="w3-bar-item w3-button">Back to overview</a>
             </div>
-            <div>
+            <div class="w3-card w3-center w3-container w3-row-padding w3-center w3-margin-top" style="max-width:600px">
                 <h3>Comments </h3>
                 @foreach ($posts as $post)
-                <h4>{{$post->title}}</h4>
+            <div class="w3-card w3-container">
+                <h4><b><u>{{$post->title}}</u></b></h4>
                 <p>{{$post->content}}</p>
-                @endforeach
             </div>
-
-            {{-- write a new comment with a title ,content in the mice category with mouse id--}}
-            {{-- {{PostController::create("title","content","mice",$mouse->id)}} --}}
-
-            {{-- include comments ??--}}
-            {{-- {{PostController::index("mice",$mouse->id)}} --}}
-        </div> 
-  </x-slot>
+            <br>
+            @endforeach
+        </div>
+    </div> 
+</x-slot>
 </x-layout>
